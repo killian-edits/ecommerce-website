@@ -29,25 +29,31 @@ export const siteSettings: SiteSettings = {
 export const heroSlides: HeroSlide[] = [
   {
     id: "1",
-    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&h=1080&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&h=1080&fit=crop",
     heading: "Autumn Collection 2024",
-    subheading: "Discover pieces crafted for the modern individual. Timeless design meets exceptional quality.",
+    subheading:
+      "Discover pieces crafted for the modern individual. Timeless design meets exceptional quality.",
     ctaText: "Shop Collection",
     ctaLink: "/products",
   },
   {
     id: "2",
-    image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1920&h=1080&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1920&h=1080&fit=crop",
     heading: "New Season Essentials",
-    subheading: "Elevate your everyday wardrobe with carefully curated essentials that blend comfort with style.",
+    subheading:
+      "Elevate your everyday wardrobe with carefully curated essentials that blend comfort with style.",
     ctaText: "Explore Now",
     ctaLink: "/products?category=essentials",
   },
   {
     id: "3",
-    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1920&h=1080&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1920&h=1080&fit=crop",
     heading: "The Art of Detail",
-    subheading: "Every stitch tells a story. Premium materials, artisanal craftsmanship, and designs that endure.",
+    subheading:
+      "Every stitch tells a story. Premium materials, artisanal craftsmanship, and designs that endure.",
     ctaText: "Discover More",
     ctaLink: "/products?category=premium",
   },
@@ -59,7 +65,8 @@ export const categories: Category[] = [
     name: "Outerwear",
     slug: "outerwear",
     description: "Premium jackets, coats, and layers",
-    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&h=800&fit=crop",
     productCount: 24,
   },
   {
@@ -67,7 +74,8 @@ export const categories: Category[] = [
     name: "Knitwear",
     slug: "knitwear",
     description: "Luxurious sweaters and cardigans",
-    image: "https://images.unsplash.com/photo-1434389677669-e08b4cda3f0e?w=600&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=800&fit=crop",
     productCount: 18,
   },
   {
@@ -75,7 +83,8 @@ export const categories: Category[] = [
     name: "Shirts",
     slug: "shirts",
     description: "Classic and contemporary shirts",
-    image: "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&h=800&fit=crop",
     productCount: 32,
   },
   {
@@ -83,7 +92,8 @@ export const categories: Category[] = [
     name: "Trousers",
     slug: "trousers",
     description: "Tailored pants and casual bottoms",
-    image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600&h=800&fit=crop",
     productCount: 21,
   },
   {
@@ -91,7 +101,8 @@ export const categories: Category[] = [
     name: "Accessories",
     slug: "accessories",
     description: "Bags, scarves, and essentials",
-    image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=800&fit=crop",
     productCount: 45,
   },
   {
@@ -99,7 +110,8 @@ export const categories: Category[] = [
     name: "Footwear",
     slug: "footwear",
     description: "Shoes, boots, and sneakers",
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=800&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=800&fit=crop",
     productCount: 28,
   },
 ];
@@ -131,7 +143,7 @@ const productImages = {
     "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&h=1000&fit=crop",
   ],
   silk_scarf: [
-    "https://images.unsplash.com/photo-1601924921557-45e6ddf3ef5c?w=800&h=1000&fit=crop",
+    "https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?w=800&h=1000&fit=crop",
     "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800&h=1000&fit=crop",
   ],
   denim_jacket: [
@@ -145,7 +157,8 @@ export const products: Product[] = [
     id: "1",
     title: "Italian Wool Overcoat",
     slug: "italian-wool-overcoat",
-    description: "A masterfully tailored overcoat crafted from the finest Italian wool. Features a clean silhouette with notch lapels, interior pocket details, and a luxuriously soft hand feel that improves with every wear.",
+    description:
+      "A masterfully tailored overcoat crafted from the finest Italian wool. Features a clean silhouette with notch lapels, interior pocket details, and a luxuriously soft hand feel that improves with every wear.",
     category: "Outerwear",
     categorySlug: "outerwear",
     price: 895,
@@ -179,7 +192,8 @@ export const products: Product[] = [
     id: "2",
     title: "Cashmere Crewneck Sweater",
     slug: "cashmere-crewneck-sweater",
-    description: "Ultra-soft Mongolian cashmere knit in a relaxed-fit crewneck. This piece offers unmatched warmth without bulk, making it perfect for layering or wearing on its own.",
+    description:
+      "Ultra-soft Mongolian cashmere knit in a relaxed-fit crewneck. This piece offers unmatched warmth without bulk, making it perfect for layering or wearing on its own.",
     category: "Knitwear",
     categorySlug: "knitwear",
     price: 385,
@@ -197,7 +211,11 @@ export const products: Product[] = [
     reviewCount: 89,
     options: [
       { id: "2-s", name: "Size", values: ["XS", "S", "M", "L", "XL"] },
-      { id: "2-c", name: "Color", values: ["Ivory", "Heather Grey", "Black", "Forest"] },
+      {
+        id: "2-c",
+        name: "Color",
+        values: ["Ivory", "Heather Grey", "Black", "Forest"],
+      },
     ],
     specs: {
       Material: "100% Grade-A Mongolian Cashmere",
@@ -212,7 +230,8 @@ export const products: Product[] = [
     id: "3",
     title: "Relaxed Linen Shirt",
     slug: "relaxed-linen-shirt",
-    description: "A breezy linen shirt with a relaxed silhouette, perfect for warm-weather dressing. Made from premium French flax linen that softens beautifully with each wash.",
+    description:
+      "A breezy linen shirt with a relaxed silhouette, perfect for warm-weather dressing. Made from premium French flax linen that softens beautifully with each wash.",
     category: "Shirts",
     categorySlug: "shirts",
     price: 165,
@@ -230,7 +249,11 @@ export const products: Product[] = [
     reviewCount: 203,
     options: [
       { id: "3-s", name: "Size", values: ["XS", "S", "M", "L", "XL", "XXL"] },
-      { id: "3-c", name: "Color", values: ["White", "Sky Blue", "Sand", "Olive"] },
+      {
+        id: "3-c",
+        name: "Color",
+        values: ["White", "Sky Blue", "Sand", "Olive"],
+      },
     ],
     specs: {
       Material: "100% French Flax Linen",
@@ -245,7 +268,8 @@ export const products: Product[] = [
     id: "4",
     title: "Artisan Leather Tote",
     slug: "artisan-leather-tote",
-    description: "Hand-stitched from full-grain vegetable-tanned leather, this tote bag develops a rich patina over time. Features an interior laptop sleeve, magnetic closure, and brass hardware.",
+    description:
+      "Hand-stitched from full-grain vegetable-tanned leather, this tote bag develops a rich patina over time. Features an interior laptop sleeve, magnetic closure, and brass hardware.",
     category: "Accessories",
     categorySlug: "accessories",
     price: 425,
@@ -262,9 +286,7 @@ export const products: Product[] = [
     tags: ["bestseller"],
     rating: 4.6,
     reviewCount: 67,
-    options: [
-      { id: "4-c", name: "Color", values: ["Tan", "Black", "Cognac"] },
-    ],
+    options: [{ id: "4-c", name: "Color", values: ["Tan", "Black", "Cognac"] }],
     specs: {
       Material: "Full-grain vegetable-tanned leather",
       Dimensions: '15" W x 12" H x 5" D',
@@ -278,7 +300,8 @@ export const products: Product[] = [
     id: "5",
     title: "Minimalist Leather Sneakers",
     slug: "minimalist-leather-sneakers",
-    description: "Clean-lined sneakers crafted from smooth Italian calfskin leather with a margom rubber sole. The epitome of understated luxury footwear.",
+    description:
+      "Clean-lined sneakers crafted from smooth Italian calfskin leather with a margom rubber sole. The epitome of understated luxury footwear.",
     category: "Footwear",
     categorySlug: "footwear",
     price: 295,
@@ -295,7 +318,11 @@ export const products: Product[] = [
     rating: 4.8,
     reviewCount: 156,
     options: [
-      { id: "5-s", name: "Size", values: ["7", "8", "9", "10", "11", "12", "13"] },
+      {
+        id: "5-s",
+        name: "Size",
+        values: ["7", "8", "9", "10", "11", "12", "13"],
+      },
       { id: "5-c", name: "Color", values: ["White", "Black", "Grey"] },
     ],
     specs: {
@@ -311,7 +338,8 @@ export const products: Product[] = [
     id: "6",
     title: "Tailored Wool Trousers",
     slug: "tailored-wool-trousers",
-    description: "Impeccably tailored trousers in a refined wool blend with a gentle drape. Features a mid-rise waist, tapered leg, and subtle stretch for all-day comfort.",
+    description:
+      "Impeccably tailored trousers in a refined wool blend with a gentle drape. Features a mid-rise waist, tapered leg, and subtle stretch for all-day comfort.",
     category: "Trousers",
     categorySlug: "trousers",
     price: 245,
@@ -344,7 +372,8 @@ export const products: Product[] = [
     id: "7",
     title: "Silk-Cashmere Scarf",
     slug: "silk-cashmere-scarf",
-    description: "A generous silk-cashmere blend scarf with an incredibly soft hand feel and subtle sheen. Versatile enough for both casual and formal styling.",
+    description:
+      "A generous silk-cashmere blend scarf with an incredibly soft hand feel and subtle sheen. Versatile enough for both casual and formal styling.",
     category: "Accessories",
     categorySlug: "accessories",
     price: 195,
@@ -361,7 +390,11 @@ export const products: Product[] = [
     rating: 4.7,
     reviewCount: 45,
     options: [
-      { id: "7-c", name: "Color", values: ["Burgundy", "Navy", "Camel", "Grey"] },
+      {
+        id: "7-c",
+        name: "Color",
+        values: ["Burgundy", "Navy", "Camel", "Grey"],
+      },
     ],
     specs: {
       Material: "70% Cashmere, 30% Silk",
@@ -376,7 +409,8 @@ export const products: Product[] = [
     id: "8",
     title: "Heritage Denim Jacket",
     slug: "heritage-denim-jacket",
-    description: "A modern take on the classic denim jacket, made from heavyweight Japanese selvedge denim. Pre-washed for a broken-in feel with beautiful fading potential.",
+    description:
+      "A modern take on the classic denim jacket, made from heavyweight Japanese selvedge denim. Pre-washed for a broken-in feel with beautiful fading potential.",
     category: "Outerwear",
     categorySlug: "outerwear",
     price: 325,
@@ -467,7 +501,8 @@ export const testimonials: Testimonial[] = [
     role: "Creative Director",
     body: "LUXE has completely transformed my wardrobe. Every piece I've purchased has become a staple. The quality is consistently exceptional.",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
   },
   {
     id: "2",
@@ -475,7 +510,8 @@ export const testimonials: Testimonial[] = [
     role: "Architect",
     body: "Finally, a brand that understands that less is more. The minimalist aesthetic and premium materials make these pieces timeless.",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face",
   },
   {
     id: "3",
@@ -483,7 +519,8 @@ export const testimonials: Testimonial[] = [
     role: "Editor",
     body: "The attention to detail is what sets LUXE apart. From packaging to product, every touchpoint feels premium and considered.",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
   },
   {
     id: "4",
@@ -491,7 +528,8 @@ export const testimonials: Testimonial[] = [
     role: "Photographer",
     body: "I appreciate brands that value craftsmanship. LUXE delivers on that promise with every single piece. My go-to for essentials.",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
   },
 ];
 
@@ -501,8 +539,26 @@ export const orders: Order[] = [
     orderNumber: "ORD-10001",
     email: "customer@example.com",
     items: [
-      { id: "1", productId: "1", title: "Italian Wool Overcoat", image: productImages.wool_coat[0], variant: "Charcoal / M", quantity: 1, unitPrice: 695, lineTotal: 695 },
-      { id: "2", productId: "3", title: "Relaxed Linen Shirt", image: productImages.linen_shirt[0], variant: "White / L", quantity: 2, unitPrice: 165, lineTotal: 330 },
+      {
+        id: "1",
+        productId: "1",
+        title: "Italian Wool Overcoat",
+        image: productImages.wool_coat[0],
+        variant: "Charcoal / M",
+        quantity: 1,
+        unitPrice: 695,
+        lineTotal: 695,
+      },
+      {
+        id: "2",
+        productId: "3",
+        title: "Relaxed Linen Shirt",
+        image: productImages.linen_shirt[0],
+        variant: "White / L",
+        quantity: 2,
+        unitPrice: 165,
+        lineTotal: 330,
+      },
     ],
     status: "delivered",
     paymentStatus: "paid",
@@ -511,7 +567,15 @@ export const orders: Order[] = [
     shipping: 0,
     tax: 82,
     total: 1107,
-    shippingAddress: { fullName: "John Doe", phone: "+1 555-0123", addressLine1: "123 Main St", city: "New York", state: "NY", zip: "10001", country: "United States" },
+    shippingAddress: {
+      fullName: "John Doe",
+      phone: "+1 555-0123",
+      addressLine1: "123 Main St",
+      city: "New York",
+      state: "NY",
+      zip: "10001",
+      country: "United States",
+    },
     createdAt: "2024-09-15",
     updatedAt: "2024-09-20",
   },
@@ -520,7 +584,16 @@ export const orders: Order[] = [
     orderNumber: "ORD-10002",
     email: "jane@example.com",
     items: [
-      { id: "3", productId: "2", title: "Cashmere Crewneck Sweater", image: productImages.cashmere_sweater[0], variant: "Ivory / S", quantity: 1, unitPrice: 385, lineTotal: 385 },
+      {
+        id: "3",
+        productId: "2",
+        title: "Cashmere Crewneck Sweater",
+        image: productImages.cashmere_sweater[0],
+        variant: "Ivory / S",
+        quantity: 1,
+        unitPrice: 385,
+        lineTotal: 385,
+      },
     ],
     status: "shipped",
     paymentStatus: "paid",
@@ -529,7 +602,15 @@ export const orders: Order[] = [
     shipping: 12,
     tax: 27.72,
     total: 386.22,
-    shippingAddress: { fullName: "Jane Smith", phone: "+1 555-0456", addressLine1: "456 Oak Ave", city: "Los Angeles", state: "CA", zip: "90001", country: "United States" },
+    shippingAddress: {
+      fullName: "Jane Smith",
+      phone: "+1 555-0456",
+      addressLine1: "456 Oak Ave",
+      city: "Los Angeles",
+      state: "CA",
+      zip: "90001",
+      country: "United States",
+    },
     trackingNumber: "1Z999AA10123456784",
     trackingCarrier: "UPS",
     createdAt: "2024-10-01",
@@ -540,8 +621,26 @@ export const orders: Order[] = [
     orderNumber: "ORD-10003",
     email: "alex@example.com",
     items: [
-      { id: "4", productId: "5", title: "Minimalist Leather Sneakers", image: productImages.sneakers[0], variant: "White / 10", quantity: 1, unitPrice: 295, lineTotal: 295 },
-      { id: "5", productId: "7", title: "Silk-Cashmere Scarf", image: productImages.silk_scarf[0], variant: "Navy", quantity: 1, unitPrice: 195, lineTotal: 195 },
+      {
+        id: "4",
+        productId: "5",
+        title: "Minimalist Leather Sneakers",
+        image: productImages.sneakers[0],
+        variant: "White / 10",
+        quantity: 1,
+        unitPrice: 295,
+        lineTotal: 295,
+      },
+      {
+        id: "5",
+        productId: "7",
+        title: "Silk-Cashmere Scarf",
+        image: productImages.silk_scarf[0],
+        variant: "Navy",
+        quantity: 1,
+        unitPrice: 195,
+        lineTotal: 195,
+      },
     ],
     status: "processing",
     paymentStatus: "paid",
@@ -550,7 +649,16 @@ export const orders: Order[] = [
     shipping: 12,
     tax: 40.16,
     total: 542.16,
-    shippingAddress: { fullName: "Alex Johnson", phone: "+1 555-0789", addressLine1: "789 Pine St", addressLine2: "Apt 4B", city: "Chicago", state: "IL", zip: "60601", country: "United States" },
+    shippingAddress: {
+      fullName: "Alex Johnson",
+      phone: "+1 555-0789",
+      addressLine1: "789 Pine St",
+      addressLine2: "Apt 4B",
+      city: "Chicago",
+      state: "IL",
+      zip: "60601",
+      country: "United States",
+    },
     createdAt: "2024-10-05",
     updatedAt: "2024-10-05",
   },
@@ -559,7 +667,16 @@ export const orders: Order[] = [
     orderNumber: "ORD-10004",
     email: "maria@example.com",
     items: [
-      { id: "6", productId: "4", title: "Artisan Leather Tote", image: productImages.leather_bag[0], variant: "Tan", quantity: 1, unitPrice: 340, lineTotal: 340 },
+      {
+        id: "6",
+        productId: "4",
+        title: "Artisan Leather Tote",
+        image: productImages.leather_bag[0],
+        variant: "Tan",
+        quantity: 1,
+        unitPrice: 340,
+        lineTotal: 340,
+      },
     ],
     status: "pending",
     paymentStatus: "pending",
@@ -568,7 +685,15 @@ export const orders: Order[] = [
     shipping: 12,
     tax: 28.16,
     total: 380.16,
-    shippingAddress: { fullName: "Maria Garcia", phone: "+1 555-0321", addressLine1: "321 Elm St", city: "Miami", state: "FL", zip: "33101", country: "United States" },
+    shippingAddress: {
+      fullName: "Maria Garcia",
+      phone: "+1 555-0321",
+      addressLine1: "321 Elm St",
+      city: "Miami",
+      state: "FL",
+      zip: "33101",
+      country: "United States",
+    },
     createdAt: "2024-10-06",
     updatedAt: "2024-10-06",
   },
@@ -577,7 +702,16 @@ export const orders: Order[] = [
     orderNumber: "ORD-10005",
     email: "customer@example.com",
     items: [
-      { id: "7", productId: "8", title: "Heritage Denim Jacket", image: productImages.denim_jacket[0], variant: "Indigo / L", quantity: 1, unitPrice: 325, lineTotal: 325 },
+      {
+        id: "7",
+        productId: "8",
+        title: "Heritage Denim Jacket",
+        image: productImages.denim_jacket[0],
+        variant: "Indigo / L",
+        quantity: 1,
+        unitPrice: 325,
+        lineTotal: 325,
+      },
     ],
     status: "cancelled",
     paymentStatus: "refunded",
@@ -586,25 +720,122 @@ export const orders: Order[] = [
     shipping: 12,
     tax: 26.96,
     total: 363.96,
-    shippingAddress: { fullName: "John Doe", phone: "+1 555-0123", addressLine1: "123 Main St", city: "New York", state: "NY", zip: "10001", country: "United States" },
+    shippingAddress: {
+      fullName: "John Doe",
+      phone: "+1 555-0123",
+      addressLine1: "123 Main St",
+      city: "New York",
+      state: "NY",
+      zip: "10001",
+      country: "United States",
+    },
     createdAt: "2024-10-02",
     updatedAt: "2024-10-04",
   },
 ];
 
 export const customers: Customer[] = [
-  { id: "1", name: "John Doe", email: "customer@example.com", totalOrders: 5, totalSpent: 2850, joinDate: "2024-01-15", status: "active", avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" },
-  { id: "2", name: "Jane Smith", email: "jane@example.com", totalOrders: 3, totalSpent: 1245, joinDate: "2024-03-22", status: "active", avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face" },
-  { id: "3", name: "Alex Johnson", email: "alex@example.com", totalOrders: 2, totalSpent: 890, joinDate: "2024-05-10", status: "active", avatarUrl: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" },
-  { id: "4", name: "Maria Garcia", email: "maria@example.com", totalOrders: 1, totalSpent: 380, joinDate: "2024-08-01", status: "active", avatarUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" },
-  { id: "5", name: "Robert Wilson", email: "robert@example.com", totalOrders: 8, totalSpent: 4200, joinDate: "2024-02-14", status: "active" },
-  { id: "6", name: "Emily Davis", email: "emily@example.com", totalOrders: 0, totalSpent: 0, joinDate: "2024-09-30", status: "inactive" },
+  {
+    id: "1",
+    name: "John Doe",
+    email: "customer@example.com",
+    totalOrders: 5,
+    totalSpent: 2850,
+    joinDate: "2024-01-15",
+    status: "active",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=80&h=80&fit=crop&crop=face",
+  },
+  {
+    id: "2",
+    name: "Jane Smith",
+    email: "jane@example.com",
+    totalOrders: 3,
+    totalSpent: 1245,
+    joinDate: "2024-03-22",
+    status: "active",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face",
+  },
+  {
+    id: "3",
+    name: "Alex Johnson",
+    email: "alex@example.com",
+    totalOrders: 2,
+    totalSpent: 890,
+    joinDate: "2024-05-10",
+    status: "active",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face",
+  },
+  {
+    id: "4",
+    name: "Maria Garcia",
+    email: "maria@example.com",
+    totalOrders: 1,
+    totalSpent: 380,
+    joinDate: "2024-08-01",
+    status: "active",
+    avatarUrl:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face",
+  },
+  {
+    id: "5",
+    name: "Robert Wilson",
+    email: "robert@example.com",
+    totalOrders: 8,
+    totalSpent: 4200,
+    joinDate: "2024-02-14",
+    status: "active",
+  },
+  {
+    id: "6",
+    name: "Emily Davis",
+    email: "emily@example.com",
+    totalOrders: 0,
+    totalSpent: 0,
+    joinDate: "2024-09-30",
+    status: "inactive",
+  },
 ];
 
 export const coupons: Coupon[] = [
-  { id: "1", code: "WELCOME10", type: "percentage", value: 10, minOrderAmount: 50, usageLimit: 1000, timesUsed: 342, isActive: true, validFrom: "2024-01-01", validTo: "2024-12-31" },
-  { id: "2", code: "FREESHIP", type: "fixed", value: 12, minOrderAmount: 150, usageLimit: 500, timesUsed: 128, isActive: true, validFrom: "2024-01-01", validTo: "2024-12-31" },
-  { id: "3", code: "SUMMER25", type: "percentage", value: 25, minOrderAmount: 200, usageLimit: 200, timesUsed: 200, isActive: false, validFrom: "2024-06-01", validTo: "2024-08-31" },
+  {
+    id: "1",
+    code: "WELCOME10",
+    type: "percentage",
+    value: 10,
+    minOrderAmount: 50,
+    usageLimit: 1000,
+    timesUsed: 342,
+    isActive: true,
+    validFrom: "2024-01-01",
+    validTo: "2024-12-31",
+  },
+  {
+    id: "2",
+    code: "FREESHIP",
+    type: "fixed",
+    value: 12,
+    minOrderAmount: 150,
+    usageLimit: 500,
+    timesUsed: 128,
+    isActive: true,
+    validFrom: "2024-01-01",
+    validTo: "2024-12-31",
+  },
+  {
+    id: "3",
+    code: "SUMMER25",
+    type: "percentage",
+    value: 25,
+    minOrderAmount: 200,
+    usageLimit: 200,
+    timesUsed: 200,
+    isActive: false,
+    validFrom: "2024-06-01",
+    validTo: "2024-08-31",
+  },
 ];
 
 export const formatCurrency = (amount: number): string => {
@@ -625,11 +856,13 @@ export const getReviewsByProduct = (productId: string): Review[] => {
 
 export const getNewArrivals = (): Product[] => {
   return [...products]
-    .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    .sort(
+      (a, b) =>
+        new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime(),
+    )
     .slice(0, 4);
 };
 
 export const getBestSellers = (): Product[] => {
   return products.filter((p) => p.tags.includes("bestseller")).slice(0, 4);
 };
-
