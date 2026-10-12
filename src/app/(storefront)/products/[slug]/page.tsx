@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -13,7 +13,9 @@ import {
   Check,
   ChevronDown,
 } from "lucide-react";
-import { products, getProductBySlug, getReviewsByProduct } from "@/lib/mock-data";
+import { products, getProductBySlug as fallbackGetProduct, getReviewsByProduct } from "@/lib/mock-data";
+import { getProductBySlug } from "@/lib/db";
+import { Product } from "@/types";
 import { formatCurrency } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
 import Button from "@/components/ui/Button";
@@ -23,9 +25,19 @@ import ProductCard from "@/components/storefront/ProductCard";
 export default function ProductDetailPage() {
   const params = useParams();
   const slug = (params?.slug as string) || "italian-wool-overcoat";
-  const product = getProductBySlug(slug) || products[0];
+  const [product, setProduct] = useState<Product>(fallbackGetProduct(slug) || products[0]);
   const reviews = getReviewsByProduct(product.id);
   const { addItem } = useCart();
+
+  useEffect(() => {
+    async function loadItem() {
+      const fetched = await getProductBySlug(slug);
+      if (fetched) {
+        setProduct(fetched);
+      }
+    }
+    loadItem();
+  }, [slug]);
 
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const [selectedSize, setSelectedSize] = useState<string>("M");

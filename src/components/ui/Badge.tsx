@@ -4,7 +4,14 @@ import { cn } from "@/lib/utils";
 
 interface BadgeProps {
   children: React.ReactNode;
-  variant?: "default" | "success" | "warning" | "error" | "info" | "new" | "sale";
+  variant?:
+    | "default"
+    | "success"
+    | "warning"
+    | "error"
+    | "info"
+    | "new"
+    | "sale";
   size?: "sm" | "md";
   className?: string;
   pulse?: boolean;
@@ -34,11 +41,10 @@ export default function Badge({
         size === "sm" ? "px-2.5 py-0.5 text-[10px]" : "px-3 py-1 text-xs",
         variantClasses[variant],
         pulse && "animate-pulse-badge",
-        className
+        className,
       )}
     >
       {children}
     </span>
   );
 }
-

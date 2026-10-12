@@ -37,7 +37,10 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
       className="group relative"
     >
       {/* Image container */}
-      <Link href={`/products/${product.slug}`} className="block relative aspect-[3/4] rounded-lg overflow-hidden bg-secondary-bg mb-3">
+      <Link
+        href={`/products/${product.slug}`}
+        className="block relative aspect-[3/4] rounded-lg overflow-hidden bg-secondary-bg mb-3"
+      >
         <motion.div
           animate={{ scale: isHovered ? 1.05 : 1 }}
           transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
@@ -71,13 +74,19 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
         )}
 
         {/* Badges */}
-        <div className="absolute top-3 left-3 flex flex-col gap-1.5 z-10">
+        <div className="absolute top-3 left-3 flex gap-1.5 z-10">
           {product.tags.includes("new") && (
-            <Badge variant="new" pulse>NEW</Badge>
+            <Badge variant="new" pulse>
+              NEW
+            </Badge>
           )}
           {hasDiscount && (
             <Badge variant="sale">
-              {Math.round(((product.price - (product.salePrice || 0)) / product.price) * 100)}% OFF
+              {Math.round(
+                ((product.price - (product.salePrice || 0)) / product.price) *
+                  100,
+              )}
+              % OFF
             </Badge>
           )}
         </div>
@@ -121,7 +130,11 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
         >
           {product.title}
         </Link>
-        <StarRating rating={product.rating} size={14} reviewCount={product.reviewCount} />
+        <StarRating
+          rating={product.rating}
+          size={14}
+          reviewCount={product.reviewCount}
+        />
         <div className="flex items-center gap-2">
           <span className="text-body-lg font-semibold text-primary-text">
             {formatCurrency(displayPrice)}
@@ -136,4 +149,3 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
     </motion.div>
   );
 }
-

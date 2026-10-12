@@ -1,22 +1,38 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { SlidersHorizontal, ChevronDown, X, RotateCcw } from "lucide-react";
-import { products, categories } from "@/lib/mock-data";
+import { products as fallbackProducts, categories as fallbackCategories } from "@/lib/mock-data";
+import { getProducts, getCategories } from "@/lib/db";
+import { Product, Category } from "@/types";
 import ProductCard from "@/components/storefront/ProductCard";
 import Button from "@/components/ui/Button";
 
 export default function ProductsPage() {
+  const [productList, setProductList] = useState<Product[]>(fallbackProducts);
+  const [categoriesList, setCategoriesList] = useState<Category[]>(fallbackCategories);
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [priceRange, setPriceRange] = useState<number>(1000);
   const [sortBy, setSortBy] = useState<string>("newest");
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
+  useEffect(() => {
+    async function loadCatalog() {
+      const [fetchedProducts, fetchedCategories] = await Promise.all([
+        getProducts(),
+        getCategories(),
+      ]);
+      setProductList(fetchedProducts);
+      setCategoriesList(fetchedCategories);
+    }
+    loadCatalog();
+  }, []);
+
   // Filter and sort items
   const filteredProducts = useMemo(() => {
-    return products
+    return productList
       .filter((p) => {
         if (selectedCategory !== "all" && p.categorySlug !== selectedCategory) return false;
         const currentPrice = p.salePrice || p.price;
@@ -125,7 +141,7 @@ export default function ProductsPage() {
               >
                 All Garments
               </button>
-              {categories.map((cat) => (
+              {categoriesList.map((cat) => (
                 <button
                   key={cat.id}
                   onClick={() => setSelectedCategory(cat.slug)}

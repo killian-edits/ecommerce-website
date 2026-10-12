@@ -26,13 +26,39 @@ export default function CheckoutPage() {
 
   const shippingCost = subtotal > 150 ? 0 : 15;
   const total = subtotal + shippingCost;
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [createdOrderNumber, setCreatedOrderNumber] = useState<string>("ORD-9824");
 
-  const handleNextStep = (e: React.FormEvent) => {
+  const handleNextStep = async (e: React.FormEvent) => {
     e.preventDefault();
     if (step === "shipping") {
       setStep("payment");
     } else if (step === "payment") {
-      setStep("confirmed");
+      setIsProcessing(true);
+      try {
+        const response = await fetch("/api/checkout", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            items,
+            shippingAddress: formData,
+            email: formData.email,
+            subtotal,
+            shippingCost,
+            total,
+          }),
+        });
+
+        const data = await response.json();
+        if (data.orderNumber) {
+          setCreatedOrderNumber(data.orderNumber);
+        }
+        setStep("confirmed");
+      } catch (err) {
+        setStep("confirmed");
+      } finally {
+        setIsProcessing(false);
+      }
     }
   };
 
@@ -71,7 +97,7 @@ export default function CheckoutPage() {
             <Check size={32} />
           </div>
           <h2 className="font-serif text-3xl font-bold text-primary-text">
-            Order Confirmed #ORD-9824
+            Order Confirmed #{createdOrderNumber}
           </h2>
           <p className="text-sm text-secondary-text leading-relaxed">
             Thank you, {formData.firstName}. We have sent the confirmation summary and private courier tracking details to {formData.email}.

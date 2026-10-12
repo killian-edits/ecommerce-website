@@ -25,10 +25,8 @@ export default function Header() {
 
   const navLinks = [
     { label: "Home", href: "/" },
-    { label: "Shop All", href: "/products" },
-    { label: "Outerwear", href: "/products?category=outerwear" },
-    { label: "Knitwear", href: "/products?category=knitwear" },
-    { label: "Accessories", href: "/products?category=accessories" },
+    { label: "Shop", href: "/products" },
+    { label: "About", href: "/about" },
   ];
 
   return (
@@ -112,7 +110,7 @@ export default function Header() {
             <Link
               href="/account"
               className="hidden sm:flex items-center justify-center p-2 text-secondary-text hover:text-primary-text transition-colors"
-              aria-label="Wishlist"
+              aria-label="Account & Wishlist"
             >
               <Heart size={20} />
             </Link>

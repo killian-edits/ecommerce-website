@@ -11,14 +11,21 @@ import {
   LogOut,
   ChevronRight,
 } from "lucide-react";
-import { orders, products, customers } from "@/lib/mock-data";
+import { orders as fallbackOrders, products, customers as fallbackCustomers } from "@/lib/mock-data";
 import { formatCurrency } from "@/lib/utils";
+import { useAuth } from "@/contexts/AuthContext";
 import Button from "@/components/ui/Button";
 import ProductCard from "@/components/storefront/ProductCard";
 
 export default function AccountPage() {
   const [activeTab, setActiveTab] = useState<"orders" | "profile" | "addresses" | "wishlist">("orders");
-  const customer = customers[0];
+  const { user, profile, signOut } = useAuth();
+  const customer = {
+    name: profile?.full_name || user?.user_metadata?.full_name || fallbackCustomers[0].name,
+    email: profile?.email || user?.email || fallbackCustomers[0].email,
+    joinDate: fallbackCustomers[0].joinDate,
+    avatarUrl: profile?.avatar_url || fallbackCustomers[0].avatarUrl,
+  };
 
   return (
     <div className="container-main py-10 md:py-16 space-y-10">
@@ -47,14 +54,21 @@ export default function AccountPage() {
           </div>
         </div>
 
-        <Link href="/">
-          <Button variant="outline" size="sm">
+        <div className="flex items-center gap-3">
+          <Button variant="outline" size="sm" onClick={() => signOut()}>
             <span className="flex items-center gap-1.5 text-secondary-text">
               <LogOut size={14} />
               Sign Out
             </span>
           </Button>
-        </Link>
+          {!user && (
+            <Link href="/auth">
+              <Button variant="primary" size="sm">
+                Sign In / Join
+              </Button>
+            </Link>
+          )}
+        </div>
       </div>
 
       {/* Account Navigation Tabs */}
@@ -130,7 +144,7 @@ export default function AccountPage() {
                 Order History & Status
               </h3>
               <div className="space-y-4">
-                {orders.map((ord) => (
+                {fallbackOrders.map((ord) => (
                   <div
                     key={ord.id}
                     className="bg-white p-6 rounded-xl border border-subtle shadow-card space-y-4"
